@@ -30,9 +30,9 @@ describe("Infractions Service Tests", () => {
     expect(infractionsRepository.getInfractionsFrom).toBeCalled();
 
     expect(result).toEqual({
-      userData: user,
+      user,
       infractions: {
-        infractionData: infraction,
+        infraction,
       },
     });
   });
